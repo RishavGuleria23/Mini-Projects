@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript CRUD Example 
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+	<hr>
+    <h2>Sign Up</h2>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">Name is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>E-mail*</label><label class="validation-error hide" id="emailValidationError">Mail Address is required.</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <label>Password:*</label><label class="validation-error hide" id="passwordValidationError">Strong Password is required.</label>
+                    <input type="password" id="password" name="password" ><br></br>
+                    
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "CRUD Practice">
+            
+                <table class="list" id="SignUp">
+                    <thead>
+                        <tr>
+                            <th>Full Name   </th>  
+                            
+                            <th>Email Id</th>
+                           
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                 
+                    <tbody>
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
